@@ -54,14 +54,6 @@ defaultText = "Three billion years of evolution has produced a tremendous divers
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
 
-# Use local CSS
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-
-local_css("style/style.css")
-
 
 # ---- HEADER SECTION ----
 with st.container():
