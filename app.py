@@ -38,7 +38,7 @@ def get_chatgpt_response(client, user_input):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",  # or another model you prefer
+            model="gpt-4",  # or another model you prefer
             messages=[
                 {"role": "system", "content": "You helpful technical assistant."},
                 {"role": "user", "content": prompt}
